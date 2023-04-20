@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="HTML Masters">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de16d5733b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio Dinamico - Angel Guzman Acosta</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1> Angel Guzman Acosta</h1>
+                <p>Desarrollador WEB Javascript | Telecomunicaciones & Networking | SCRUM Master</p>
+               
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>  
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Resume</a>
+                <a href="#">Landing Page</a>
+                <a href="#">App CRUD</a>
+                <a href="#">App Dashboard</a>
+                <a href="#">App Restaurant</a>
+                <a href="#">Ecommerce</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item"
+                    data-categoria="resume" 
+                    data-etiquetas="profesional personal Curriculum resume"
+                    data-descripcion="Resume"
+            >
+                <div class="item-contenido">
+                    <img src="img/Angel.jpg" alt=""><a href="https://www.linkedin.com/in/angel-guzman-acosta-60135293/">Linkedin</a>
+                </div>
+            </div>
+
+            <div class="item"
+                    data-categoria="landing page" 
+                    data-etiquetas="proyecto1 landpage"
+                    data-descripcion="Landing Page"
+            >
+                <div class="item-contenido">
+                    <img src="img/landpage.jpg" alt=""><a href="https://aguzman7908.github.io/proyecto1landpage/">LandingPage</a>
+                </div>
+            </div>
+
+            <div class="item"
+                    data-categoria="app crud" 
+                    data-etiquetas="proyecto2 crud app"
+                    data-descripcion="App CRUD"
+            >
+                <div class="item-contenido">
+                    <img src="img/crud.jpg" alt=""><a href="https://aguzman7908.github.io/proyecto2CRUD/">CRUD</a>
+                </div>
+            </div>
+
+            <div class="item"
+                    data-categoria="app dashboard" 
+                    data-etiquetas="proyecto3 Dashboard app"
+                    data-descripcion="App Dashboard"
+            >
+                <div class="item-contenido">
+                    <img src="img/dashboard.jpg" alt=""><a href="https://aesthetic-buttercream-14a564.netlify.app">Dashboard</a>
+                </div>
+            </div>
+
+            <div class="item"
+                    data-categoria="app restaurant" 
+                    data-etiquetas="proyecto4 restaurant app"
+                    data-descripcion="App Restaurant"
+            >
+                <div class="item-contenido">
+                    <img src="img/rinconargentino.jpg" alt=""><a href="https://aguzman7908.github.io/proyecto4AppRestaurant/">Restaurant</a>
+                </div>
+            </div>
+
+            <div class="item"
+                    data-categoria="ecommerce" 
+                    data-etiquetas="proyecto5 Ecommerce"
+                    data-descripcion="Ecommerce"
+    >
+                <div class="item-contenido">
+                    <img src="img/ecommerce.jpg" alt=""><a href="https://ecommerceclient-dwij.onrender.com">Ecommerce</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fas  fa-times"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"> </p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="http://www.twitter.com" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="contenedor-icono">
+                    <a href="http://www.facebook.com" target="_blank" class="facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+
+                <div class="contenedor-icono">
+                    <a href="http://www.instagram.com" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="creado-por">
+                <p>Sitio diseñado por ® 
+                    <a href="#">Angel Guzman Acosta</a> -
+                    <a href="https://github.com/Aguzman7908">GitHub</a> 
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main.js"></script>     
+</body>
+</html>
