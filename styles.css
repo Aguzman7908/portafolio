@@ -215,6 +215,11 @@ footer .creado-por a:hover{text-decoration: underline;}
 
 /* me3dia query */
 
+thead {
+    background-color:cadetblue;
+    color: white;
+}
+
 @media screen and (max-width: 700px) {
     .grid .item {
         width: calc(50% - 20px);
